@@ -1,0 +1,76 @@
+@media only screen and (max-width: 1000px) {
+    .slideshow {
+        width: 100%;
+    }
+    body {
+        background-color: #fffbe6;
+    }
+    .footer {
+        width: 100%;
+    }
+}
+@font-face {
+    font-family: aniron;
+    src: url(Fonts/aniron.ttf);
+}
+body {
+    overflow-x: hidden;
+}
+header {
+    position: relative;
+    left: 5%;
+    width: 100%;
+}
+a:link, a:visited, a:hover {
+    background-color: palegoldenrod;
+    padding: 1vw;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: aniron, serif;
+    font-size: 1vw;
+}
+
+
+h1 {
+    text-shadow: 3px 2px palegoldenrod;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    font-family: aniron, serif;
+    font-size: 3vw;
+}
+
+.title {
+    text-align: center;
+}
+
+img {
+    width: 100%;
+}
+.slideshow{
+    position: relative;
+    top: 10%;
+    left: 30%;
+    width: 40%;
+}
+
+.date {
+    font-family: Aniron, serif;
+    position: absolute;
+    float: left;
+    top: 30%;
+    left: 5%;
+    width: 20%;
+    height: 20%;
+
+}
+
+footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+

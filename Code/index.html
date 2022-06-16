@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lord of the rings trilogy</title>
+    <link rel="shortcut icon" href="Images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+<header>
+<nav>
+    <a href="index.html">HOME</a>
+    <a href="plot.html">PLOT</a>
+    <a href="races.html">RACES</a>
+    <a href="characters.html">CHARACTERS</a>
+    <a href="places.html">PLACES</a>
+    <a href="behind_the_scenes.html">BEHIND THE SCENES</a>
+    <a href="documentation.html">DOCUMENTATION</a>
+    <a href="info.html">INFO</a>
+</nav>
+</header>
+<div class="title">
+    <h1>Lord of the rings trilogy</h1>
+</div>
+<div class="slideshow">
+    <img id="slide" src="Images" alt="slide">
+</div>
+<div class="date">
+    <p id="date"></p>
+</div>
+<footer>
+    <a href="contact_us.html">CONTACT US</a>
+</footer>
+<script>
+    var i = 0;
+    var images = [];
+    var time = 2000;
+
+    images [0] = "Images/lord_of_the_rings_trilogy.jpg";
+    images [1] = "Images/fellowship_of_the_ring.jpg";
+    images [2] = "Images/two_towers.jpg";
+    images [3] = "Images/return_of_the_king.jpg";
+
+    function change_img(){
+        document.getElementById("slide").src = images[i];
+        if(i < images.length - 1){
+            i++;
+        } else {
+            i = 0;
+        }
+
+        setTimeout("change_img()", time);
+    }
+
+    window.onload = change_img;
+
+    var d = new Date();
+    document.getElementById("date").innerHTML = d;
+</script>
+</body>
+</html>

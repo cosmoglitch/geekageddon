@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lord of the rings trilogy</title>
+    <link rel="shortcut icon" href="Images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="info.css">
+    <script>
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</head>
+<body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<header>
+    <a href="index.html">HOME</a>
+    <a href="plot.html">PLOT</a>
+    <a href="races.html">RACES</a>
+    <a href="characters.html">CHARACTERS</a>
+    <a href="places.html">PLACES</a>
+    <a href="behind_the_scenes.html">BEHIND THE SCENES</a>
+    <a href="documentation.html">DOCUMENTATION</a>
+    <a href="info.html">INFO</a>
+</header>
+<div class="title">
+    <h1>Lord of the rings trilogy</h1>
+</div>
+<table>
+    <caption>Web pages labeling</caption>
+    <thead>
+    <tr>
+        <th scope="col">Web page</th>
+        <th scope="col">Corresponding letter</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td data-label="Web page">Home page</td>
+        <td data-label="Letter">A</td>
+    </tr>
+    <tr>
+        <td data-label="Web page">Plot page</td>
+        <td data-label="Letter">B</td>
+    </tr>
+    <tr>
+        <td data-label="Web page">Races page</td>
+        <td data-label="Letter">C</td>
+    </tr>
+    <tr>
+        <td data-label="Web page">Characters page</td>
+        <td data-label="Letter">D</td>
+    </tr>
+    <tr>
+        <td data-label="Web page">Places page</td>
+        <td data-label="Letter">E</td>
+    </tr>
+    <tr>
+        <td data-label="Web page">Behind the scenes page</td>
+        <td data-label="Letter">F</td>
+    </tr>
+    <tr>
+        <td data-label="Web page">Documentation page</td>
+        <td data-label="Letter">G</td>
+    </tr>
+    <tr>
+        <td data-label="Web page">Info page</td>
+        <td data-label="Letter">H</td>
+    </tr>
+    <tr>
+        <td data-label="Web page">Contact us page</td>
+        <td data-label="Letter">I</td>
+    </tr>
+    </tbody>
+</table>
+<div class="info">
+    <ul>
+        <li>All pages include text.</li>
+        <li>Images included in pages B, C, D, E and I.</li>
+        <li>External videos added to pages B, D and F. Local videos included in page C and E.</li>
+        <li>Audios included to page D.</li>
+        <li>Tables added to pages B and H.</li>
+        <li>Lists added to pages C and H.</li>
+        <li>Form included in page I.</li>
+        <li>External style sheet style.css used on all pages except C.</li>
+        <li>Internal style, internal.css, used on C.</li>
+        <li>JavaScript used on all pages except A to create a button that directs the user back to the top of the page. JavaScript added to page A to create a slideshow and display current date and time.</li>
+        <li>JavaScript used on page D for multiple audios. If the user plays an audio and decides to click on another, the previous audio automatically pauses.</li>
+    </ul>
+</div>
+<footer>
+<a href="contact_us.html">CONTACT US</a>
+</footer>
+</body>
+</html>

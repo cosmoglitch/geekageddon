@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lord of the rings trilogy</title>
+    <link rel="shortcut icon" href="Images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="contact_us.css">
+    <script>
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</head>
+<body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<div class="nav">
+    <a href="index.html">HOME</a>
+    <a href="plot.html">PLOT</a>
+    <a href="races.html">RACES</a>
+    <a href="characters.html">CHARACTERS</a>
+    <a href="places.html">PLACES</a>
+    <a href="behind_the_scenes.html">BEHIND THE SCENES</a>
+    <a href="documentation.html">DOCUMENTATION</a>
+    <a href="info.html">INFO</a>
+</div>
+<div class="form">
+    <h1>Please fill in the following form:</h1>
+    <form method="post" action="form.asp" autocomplete="on">
+        <fieldset>
+            <legend>Personal information</legend>
+            First name:
+            <input type="text" name="firstname" id="firstname" placeholder="First name"/>
+            Last name:
+            <input type="text" name="lastname" id="lastname" placeholder="Last name"/> <br /> <br />
+            Email Address:
+            <input type="text" name="emailaddress" id="emailaddress" placeholder="Email address"/> <br /> <br />
+            Address:
+            <textarea name="message" id="address" rows="4" cols="20" placeholder="Address"></textarea><br /><br />
+            Password:
+            <input type="password" name="password" id="password" placeholder="Password">
+        </fieldset>
+        <fieldset>
+        <legend>About the trilogy</legend>
+            <h3>How would you rate Lord of the rings trilogy (1 to 10)?</h3>
+            <label for="rate"></label>
+            <input type="number" name="rate" id="rate" min="0" max="10">
+            <h3>Favourite movie from the trilogy</h3>
+            Fellowship of the ring<input type="radio" name="first" id="first" />
+            The two towers<input type="radio" name="second" id="second" />
+            Return of the king<input type="radio" name="third" id="third" />
+            <h3>Favourite race(s): please select one or more</h3>
+            Mount Doom
+            <input type="checkbox" name="doom" id="doom" />
+            Anduin river
+            <input type="checkbox" name="anduin" id="anduin" />
+            Gondor
+            <input type="checkbox" name="gondor" id="gondor"/>
+            Helm's Deep
+            <input type="checkbox" name="helms" id="helms"/>
+            Isengard
+            <input type="checkbox" name="isengard" id="isengard"/>
+            Khazad-dum
+            <input type="checkbox" name="dum" id="dum"/>
+            Lothlorien
+            <input type="checkbox" name="loth" id="loth"/>
+            Mordor
+            <input type="checkbox" name="mordor" id="mordor"/>
+            Rivendell
+            <input type="checkbox" name="rivendell" id="rivendell" />
+            Rohan
+            <input type="checkbox" name="rohan" id="rohan" />
+            The Shire/Hobbiton
+            <input type="checkbox" name="shire" id="shire"/>
+            <h3>Favourite character(s): please select one or more(Hold Ctrl key)?</h3>
+            Which characters: please select one or more?
+            <select name="character" id="character" multiple="multiple">
+                <option value="frodo">Frodo Baggins</option>
+                <option value="sam">Sam</option>
+                <option value="gandalf">Gandalf</option>
+                <option value="aragorn">Aragorn</option>
+                <option value="legolas">Legolas</option>
+                <option value="gimli">Gimli</option>
+                <option value="boromir">Boromir</option>
+                <option value="merry">Merry</option>
+                <option value="pippin">Pippin</option>
+                <option value="bilbo">Bilbo Baggins</option>
+                <option value="arwen">Arwen</option>
+                <option value="elrond">Lord Elrond</option>
+                <option value="galadriel">Lady Galadriel</option>
+                <option value="gollum">Gollum/Smeagol</option>
+                <option value="saruman">Saruman</option>
+                <option value="sauron">Sauron</option>
+        </select> <br /> <br />
+            <textarea rows="4" cols="50">Enter your message here...</textarea> <br /> <br />
+        <input type="submit" name="send" value="Submit"/>
+        <input type="reset" name="reset" value="Clear Form"/>
+        <input type="button" name="button" value="Click me" onclick="alert('Hello')"/>
+        </fieldset>
+    </form>
+</div>
+<div class="map">
+    <img src="Images/map.jpg" alt="map">
+</div>
+<footer>
+    <a href="contact_us.html">CONTACT US</a>
+</footer>
+</body>
+</html>

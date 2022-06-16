@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Crude Coder</title>
+    <link rel="shortcut icon" href="Images/One_ring_transparent.png" />
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+<header>
+<nav>
+    <a href="index.html">HOME</a>
+    <a href="thejourney.html">The Journey</a>
+    <a href="dsa.html">DSA-Basics</a>
+    <a href="competitiveprogramming.html">Competitive Programming</a>
+    <a href="projects.html">Projects</a>
+    <a href="leetcode.html">LeetCode</a>
+    <a href="g4g.html">Geeks4Geeks</a>
+    <a href="aboutme.html">About Me</a>
+</nav>
+</header>
+<div class="title">
+    <h1>The Crude Coder</h1>
+    <button id="playAudio">⏵︎</button>
+</div>
+
+<audio id="testAudio" hidden src="Audio/roadgoes.mp3" type="audio/mpeg">
+</audio>
+
+<!-- div class="slideshow">
+    <img id="slide" src="Images" alt="slide">
+</div -->
+<!-- div class="date">
+    <p id="date"></p>
+</div -->
+<footer>
+    <p id="date"></p>
+    <!-- a href="contact_us.html">CONTACT US</a -->
+</footer>
+<script>
+
+    // Audio Play
+    document.getElementById("playAudio").addEventListener("click", function(){
+	var audio = document.getElementById('testAudio');
+  if(this.className == 'is-playing'){
+    this.className = "";
+    this.innerHTML = "⏵︎"
+    audio.pause();
+  }else{
+    this.className = "is-playing";
+    this.innerHTML = "⏸︎";
+    audio.play();
+  }
+
+});
+
+    // Images slideshow
+    var i = 0;
+    var images = [];
+    var time = 2000;
+
+    images [0] = "Images/lord_of_the_rings_trilogy.jpg";
+    images [1] = "Images/fellowship_of_the_ring.jpg";
+    images [2] = "Images/two_towers.jpg";
+    images [3] = "Images/return_of_the_king.jpg";
+
+    function change_img(){
+        document.getElementById("slide").src = images[i];
+        if(i < images.length - 1){
+            i++;
+        } else {
+            i = 0;
+        }
+
+        setTimeout("change_img()", time);
+    }
+
+    window.onload = change_img;
+
+    var d = new Date();
+    document.getElementById("date").innerHTML = d;
+</script>
+</body>
+</html>

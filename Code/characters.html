@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lord of the rings trilogy</title>
+    <link rel="shortcut icon" href="Images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="characters.css">
+    <script>
+        document.addEventListener('play', function(e){
+            var audios = document.getElementsByTagName('audio');
+            for(var i = 0, len = audios.length; i < len;i++){
+                if(audios[i] !== e.target){
+                    audios[i].pause();
+                }
+            }
+        }, true);
+
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</head>
+<body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<header>
+    <a href="index.html">HOME</a>
+    <a href="plot.html">PLOT</a>
+    <a href="races.html">RACES</a>
+    <a href="characters.html">CHARACTERS</a>
+    <a href="places.html">PLACES</a>
+    <a href="behind_the_scenes.html">BEHIND THE SCENES</a>
+    <a href="documentation.html">DOCUMENTATION</a>
+    <a href="info.html">INFO</a>
+</header>
+<div class="title">
+    <h1>Lord of the rings trilogy</h1>
+</div>
+<div class="characters">
+    <h2>Main characters (The Fellowship):</h2>
+    <p><img src="Images/frodo.jpg" alt="frodo">Frodo Baggins, portrayed by Elijah Wood, is the central character in the trilogy. He is a hobbit from the Shire who gets the "One ring" from his uncle. He is the one who accepts the mission to destroy the ring in Mount Doom.</p>
+        <audio controls> <source src="Audio/frodo.mp3"></audio>
+</div>
+<div class="characters">
+    <p><img src="Images/sam.jpg" alt="sam">Samwise Gamgee, portrayed by Sean Austin, is the second main character after Frodo. Sam is s hobbit and accompanies Frodo until the very end of the story. He aids Frodo during their treacherous quest by providing food, carrying the ring and motivating him.</p>
+        <audio controls> <source src="Audio/sam.mp3"></audio>
+</div>
+<div class="characters">
+    <p><img src="Images/gandalf.jpg" alt="gandalf">Gandalf, portrayed by Ian McKellen, is a powerful wizard and leader of the fellowship. In the beginning he is known as Gandalf the Grey but later on returns as Gandalf the White.</p>
+        <audio controls> <source src="Audio/gandalf.mp3"></audio>
+</div>
+<div class="characters">
+    <p><img src="Images/aragorn.jpg" alt="aragorn">Aragorn, also known as Strider and portrayed by Viggo Mortensen, is a man but with great might and elven wisdom. He is a skillful swordsman and fitted for a king.</p>
+        <audio controls> <source src="Audio/aragorn.mp3"></audio>
+</div>
+<div class="characters">
+    <p><img src="Images/legolas.jpg" alt="legolas">Legolas, portrayed by Orlando Bloom, is an elf and archer with extraordinary battle skills. He moves light and fast which gives him an advantage during the war. He slays many enemies while fighting together with Aragorn and Gimli.
+        <audio controls> <source src="Audio/legolas.mp3"></audio>
+</div>
+<div class="characters">
+    <p><img src="Images/gimli.jpg" alt="gimli">Gimli, portrayed by John Rhys-Davies, is a dwarf and represents the race in the fellowship. He always competes with Legolas, the elf, but towards the end they become good friends.</p>
+        <audio controls> <source src="Audio/gimli.mp3"></audio>
+</div>
+<div class="characters">
+    <p><img src="Images/boromir.jpg" alt="boromir">Boromir, portrayed by Sean Bean was an honorable man who avidly admired the vastness of his kingdom and battled determinedly for it. His massive strength and powerful character turned him into a broadly respected leader and the preferred son between him and his brother until his very death.</p>
+        <audio controls> <source src="Audio/boromir.mp3"></audio>
+</div>
+<div class="characters">
+    <p><img src="Images/merry.jpg" alt="merry">Meriadoc "Merry" Brandybuck, portrayed by Dominic Monaghan, is a hobbit and one of Frodo's dearest friends. He loves boats and maps and is constantly accompanied by his best friend Pippin. Although scared at first he shows great bravery and consideration towards the third movie.</p>
+        <audio controls> <source src="Audio/merry.mp3"></audio>
+</div>
+<div class="characters">
+    <p><img src="Images/pippin.jpg" alt="pippin">Peregrin "Pippin" Took, portrayed by Billy Boyd, is a hobbit and best friend and cousin of Merry. He always gets in trouble for being clumsy but is a great singer.</p>
+        <audio controls> <source src="Audio/pippin.mp3"></audio>
+</div>
+<div class="characters">
+    <h2>Secondary characters:</h2>
+    <p><img src="Images/bilbo.jpg" alt="bilbo">Bilbo Baggins, portrayed by Ian Holm, is Frodo's uncle. He finds the ring initially and keeps it for many years until he gives it over to his nephew.</p>
+        <audio controls> <source src="Audio/bilbo.mp3"></audio>
+</div>
+<div class="characters">
+    <p><img src="Images/arwen.jpg" alt="arwen">Arwen, portrayed by Lyv Tyler, is of half-elven race. She is the beloved of Aragorn. As an elf she has to go to their holy land in order to continue living long. However, she preferred to stay with Aragorn as she wants to die with her love by her side rather than live long in loneliness.</p>
+        <audio controls> <source src="Audio/arwen.mp3"></audio>
+</div>
+<div class="characters">
+    <p><img src="Images/elrond.jpg" alt="elrond">Lord Elrond, portrayed by Hugo Weaving, is Arwen's father. He is one of the elven leaders and is lord of Riverdell, where the Fellowship was formed.</p>
+        <audio controls> <source src="Audio/elrond.mp3"></audio>
+</div>
+<div class="characters">
+    <p><img src="Images/galadriel.jpg" alt="galadriel">Lady Gladriel, portrayed by Cate Blanchett, is a royal elf. She is the most powerful and most beautiful among the elves. She presents gifts to the four hobbits from the fellowship to aid them on their journey.</p>
+        <audio controls> <source src="Audio/galadriel.mp3"></audio>
+</div>
+<div class="characters">
+    <p><img src="Images/gollum.jpg" alt="gollum">Gollum, voiced by Andy Serkis, is foul creature that was a hobbit years ago, called Smeagol. However,  he was deeply obsessed and corrupted by the ring and turned into a treacherous creature. He was actually more pitied than feared.</p>
+        <audio controls> <source src="Audio/gollum.mp3"></audio>
+</div>
+<div class="characters">
+    <p><img src="Images/saruman.jpg" alt="saruman">Saruman, portrayed by Christopher Lee, is a powerful wizard who betrays Gandalf and joins Sauron and his evil army. He supervises the breeding of the orcs and creates a massive army to fight the peoples of Middle Earth.</p>
+        <audio controls> <source src="Audio/saruman.mp3"></audio>
+</div>
+<div class="characters">
+    <p><img src="Images/sauron.jpg" alt="sauron">Sauron, portrayed by Sala Baker, is the evil lord who created "the one ring" in order to rule the others and all peoples of Middle Earth. The fellowship tries to stop him by destroying the ring in the fires where it was created.</p>
+        <audio controls> <source src="Audio/sauron.mp3"></audio>
+</div>
+<div class="characters">
+    <p><img src="Images/denethor.jpg" alt="denethor">Denethor, portrayed by John Noble, is a  of Gondor. He has two sons and has always favoured the older one, Boromir, rather than the younger, Faramir. At Boromir's death he is quite devastated.</p>
+    <audio controls> <source src="Audio/denethor.mp3"></audio>
+</div>
+<div class="characters">
+    <p><img src="Images/eomer.jpg" alt="eomer">Eomer, portrayed by Karl Urban, belongs to the house of Eorl. He has a sister named Eowyn. They have been both raised by their uncle Theoden after their parents' death.</p>
+    <audio controls> <source src="Audio/eomer.mp3"></audio>
+</div>
+<div class="characters">
+    <p><img src="Images/eowyn.jpg" alt="eowyn">Eowyn, portrayed by Miranda Otto, is Eomer's sister. She is a brave woman who is a skillful fighter as well. She disguises herself as a man in order to go to the battlefield and shortly faces Sauron's wrath.</p>
+    <audio controls> <source src="Audio/eowyn.mp3"></audio>
+</div>
+<div class="characters">
+    <p><img src="Images/faramir.jpg" alt="faramir">Faramir, portrayed by David Wenham, is Boromir's younger brother. Although as brave as his brother, Faramir has always suffered lack of love from his father, Denethor, who has always favoured his older son, Boromir, who is part of the Fellowship and dies at the end of the first movie trying to protect it. Faramir marries Eowyn at the end, which also symbolises the union of the two kingdoms of Gondor and Rohan.</p>
+    <audio controls> <source src="Audio/faramir.mp3"></audio>
+</div>
+<div class="characters">
+    <p><img src="Images/theoden.jpg" alt="theoden">Theoden is the king of Rohan. He had been bewitched by Saruman, poisoning his mind, until Gandalf awakes him and he joins the fight for the peoples of Middle Earth.</p>
+    <audio controls> <source src="Audio/theoden.mp3"></audio>
+</div>
+<div class="characters">
+    <p>Check out this video to have a look at some of the cast behind the scenes:</p>
+</div>
+<div class="video">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/EXNqgA5jMXs" allowfullscreen></iframe>
+</div>
+<footer>
+    <a href="contact_us.html">CONTACT US</a>
+</footer>
+</body>
+</html>

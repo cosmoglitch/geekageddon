@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lord of the rings trilogy</title>
+    <link rel="shortcut icon" href="Images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="places.css">
+    <script>
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</head>
+<body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<header>
+    <a href="index.html">HOME</a>
+    <a href="plot.html">PLOT</a>
+    <a href="races.html">RACES</a>
+    <a href="characters.html">CHARACTERS</a>
+    <a href="places.html">PLACES</a>
+    <a href="behind_the_scenes.html">BEHIND THE SCENES</a>
+    <a href="documentation.html">DOCUMENTATION</a>
+    <a href="info.html">INFO</a>
+</header>
+<div class="title">
+    <h1>Lord of the rings trilogy</h1>
+</div>
+<div class="places">
+    <p>Middle Earth is the fantasy world of the lord of the rings trilogy. All locations have been set up in New Zealand for the filming. Now people can take trips in Middle Earth and this is a big part of the country's tourism.</p>
+    <p><img src="Images/hobbiton.jpg" alt="hobbiton">This scenery was used as Hobbiton and the Shire, where the hobbits live. The set is located on a family run farm and was created near the town of Matamata, in New Zealand's North island. Fans of lord of the rings trilogy can have a tour and this attraction is part of the so-called Tolkien tourism.</p>
+</div>
+<div class="places">
+    <p><img src="Images/riverdell.jpg" alt="riverdell">Wellington, situated in Mount Victoria was the set for the Hobbiton Woods, where Frodo, Sam, Merry and Pippin hide from the black riders in the first movie. Hutt River substituted River Anduin, Harcourt Park was the scenery for the Isengard gardens and Kaitoke Regional Park is Rivendell. Queen Elisabeth Park was set for filming the Battle in the Pelennor Fields, while Waitarere Forest is the fantasy Osgiliath Wood. Putangirua Pinnacles is where Aragorn, Gimli and Legolas went to seek assistance from the army of the dead.</p>
+</div>
+<div class="places">
+    <p><img src="Images/ring.jpg" alt="ring">Nelson Tasman is the home of Jens Hansen, who created the 40 rings used during the filming of the trilogy. This was the set for Chetwood Forest, where Aragorn tried to save the hobbits from the black riders. Tourists can take a helicopter which will take them to the place where the fellowship hid from the Saruman's black crows.</p>
+</div>
+<div class="places">
+    <p><img src="Images/rohan.jpg" alt="rohan">Canterbury was set for Edoras, the city of Rohan. Everything built was destroyed. It took nine months to construct the place for the filming. However, tourists can still visit the site.</p>
+</div>
+<div class="places">
+    <p><img src="Images/pelennor.jpg" alt="pelennor">In the Mackenzie Country the mighty battle in the Pelennor Fields between orcs and the peoples of Rohan and Gondor was set. The site is private but a tour can be arranged for anyone interested.</p>
+</div>
+<div class="places">
+    <p><img src="Images/river.jpg" alt="river">Mount Aspiring National park is the set for the opening in the second movie of the trilogy. Here is also the elven forest Lothlorien. Queenstown is the place where the Gladden Fields scenes were filmed. River Anduin and the Pillars of Argonath can be visited as well.</p>
+</div>
+<div class="places">
+    <p>In this video, you can experience the Tolkien tourism and check out some of the places where the movies were filmed:</p>
+</div>
+<div class="video">
+    <video width="560" height="315" controls="controls" preload="none" onclick="this.paused ? this.play() : this.pause();">
+        <source src="Video/locations.mp4" type="video/mp4">
+    </video>
+</div>
+<footer>
+    <a href="contact_us.html">CONTACT US</a>
+</footer>
+</body>
+</html>

@@ -1,0 +1,89 @@
+@font-face {
+    font-family: aniron;
+    src: url(Fonts/aniron.ttf);
+}
+body {
+    overflow-x: hidden;
+}
+
+header {
+    position: relative;
+    left: 5%;
+    width: 100%;
+}
+
+a:link, a:visited, a:hover {
+    background-color: palegoldenrod;
+    padding: 1vw;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: aniron, serif;
+    font-size: 1vw;
+}
+
+h1 {
+    text-shadow: 3px 2px palegoldenrod;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    font-family: aniron, serif;
+    font-size: 3vw;
+}
+
+.title {
+    text-align: center;
+}
+
+.behind {
+    font-family: Aniron, serif;
+    padding: 6%;
+    text-align: justify;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 5%;
+    right: 1%;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: palegoldenrod;
+    color: black;
+    cursor: pointer;
+    padding: 1vw;
+    border-radius: 1vw;
+    font-size: 1vw;
+    font-family: Aniron, serif;
+}
+
+iframe {
+    width: 100%;
+}
+
+.aspect-ratio {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 51%;
+}
+
+.aspect-ratio iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0; top: 0;
+}
+
+.video {
+    padding: 10%;
+}
+
+footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}

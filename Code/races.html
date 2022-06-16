@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lord of the rings trilogy</title>
+    <link rel="shortcut icon" href="Images/favicon.ico" />
+    <style>
+        @font-face {
+            font-family: aniron;
+            src: url(Fonts/aniron.ttf);
+        }
+
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 5%;
+            right: 1%;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color: palegoldenrod;
+            color: black;
+            cursor: pointer;
+            padding: 1vw;
+            border-radius: 1vw;
+            font-size: 1vw;
+            font-family: Aniron, serif;
+        }
+        body {
+            overflow-x: hidden;
+        }
+        header {
+            position: relative;
+            left: 5%;
+            width: 100%;
+        }
+        a:link, a:visited, a:hover {
+            background-color: palegoldenrod;
+            padding: 1vw;
+            color: black;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-family: aniron, serif;
+            font-size: 1vw;
+        }
+
+        .title {
+            text-align: center;
+        }
+
+        h1 {
+            text-shadow: 3px 2px palegoldenrod;
+            letter-spacing: 3px;
+            word-spacing: 10px;
+            font-family: aniron, serif;
+            font-size: 3vw;
+        }
+
+        video {
+            width: 100%;
+        }
+
+        .aspect-ratio video {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0; top: 0;
+        }
+
+        .video {
+            padding: 10%;
+        }
+
+
+        .races {
+            font-family: Aniron, serif;
+            padding: 5%;
+        }
+
+        li {
+            padding: 5%;
+        }
+
+        img {
+            float: right;
+            margin-right: 2%;
+        }
+
+        footer {
+            position: relative;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+<header>
+    <a href="index.html">HOME</a>
+    <a href="plot.html">PLOT</a>
+    <a href="races.html">RACES</a>
+    <a href="characters.html">CHARACTERS</a>
+    <a href="places.html">PLACES</a>
+    <a href="behind_the_scenes.html">BEHIND THE SCENES</a>
+    <a href="documentation.html">DOCUMENTATION</a>
+    <a href="info.html">INFO</a>
+</header>
+<div class="title">
+    <h1>Lord of the rings trilogy</h1>
+</div>
+<div class="races">
+    <h2>Races:</h2>
+    <p>The trilogy features many different races that vary in appearance and personality. Here are the ones that play major roles in the movies:</p>
+    <ul>
+        <li><img src="Images/elves.jpg" alt="elves"><b>Elves</b> are beautiful, tall, long-haired and graceful creatures. Elves do not physically age and can never be ill. However, they can die from violence or extreme negative emotion.</li>
+        <li><img src="Images/orcs.jpg" alt="orcs"><b>Orcs</b> are the main foot soldiers of Sauron. They are dim-witted creatures that are always miserable and hate themselves and their master whom they serve out of pure fear.</li>
+        <li><img src="Images/men.jpg" alt="men"><b>Men</b> are located mainly in the kingdoms of Gondor and Rohan. Although they are destined to be kings, they are easily corrupted by the power of the one ring and can be controlled by Sauron with ease.</li>
+        <li><img src="Images/uruk.jpg" alt="uruk"><b>Uruk-hai</b> are half-orcs half-men. They have great strength and superior size. Saruman has been breeding them in order to inflict massive damage during the war. They have thick armour that is almost impossible to pierce through.</li>
+        <li><img src="Images/dwarf.jpg" alt="dwarf"><b>Dwarves</b> live mainly in mountains and caves. They are famous for their mining skills. Dwarves are aggressive and fierce in battle. Male and female look almost the same - long beards and short.</li>
+        <li><img src="Images/hobbit.jpg" alt="hobbit"><b>Hobbits or halflings</b> look similar to men but much shorter. They have curly hair on their heads and feet. They like eating and drinking as well as smoking pipeweed.</li>
+        <li><img src="Images/ent.png" alt="ent"><b>Ents</b> are a very ancient race. They are tree-like creatures that cannot reproduce because they have lost their female mates, the entwives.</li>
+        <li><img src="Images/troll.png" alt="troll"><b>Trolls</b> are creatures that lurk in the Misty Mountains and Mordor. Some turn to stone when exposed to sunlight. Others are clever and resistant to sun.</li>
+        <li><img src="Images/wizards.jpg" alt="wizard"><b>Wizards</b> are extremely powerful and intelligent. They are tall and wear pointy hats, long robes and carry a staff. The staff is used in battle and to cast spells. There are five wizards in the mythology but only two of them appear in the movie trilogy.</li>
+    </ul>
+</div>
+<div class="races">
+    <p>The following video shows the major races appearing in the trilogy and gives some information about each:</p>
+</div>
+<div class="video">
+    <video width="560" height="315" controls="controls" preload="none" onclick="this.paused ? this.play() : this.pause();">
+        <source src="Video/races.mp4" type="video/mp4">
+    </video>
+</div>
+<footer>
+    <a href="contact_us.html">CONTACT US</a>
+</footer>
+</body>
+</html>

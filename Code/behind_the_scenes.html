@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lord of the rings trilogy</title>
+    <link rel="shortcut icon" href="Images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="behind_the_scenes.css">
+    <script>
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</head>
+<body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<header>
+    <a href="index.html">HOME</a>
+    <a href="plot.html">PLOT</a>
+    <a href="races.html">RACES</a>
+    <a href="characters.html">CHARACTERS</a>
+    <a href="places.html">PLACES</a>
+    <a href="behind_the_scenes.html">BEHIND THE SCENES</a>
+    <a href="documentation.html">DOCUMENTATION</a>
+    <a href="info.html">INFO</a>
+</header>
+<div class="title">
+    <h1>Lord of the rings trilogy</h1>
+</div>
+<div class="behind">
+    <p>On this page you can view some videos of the cast and crew explaining how some scenes were filmed as well as any accidents that happened on the set:</p>
+</div>
+<div class="video">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/unHW5-FagHM" allowfullscreen></iframe>
+</div>
+<div class="video">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/AVpFYDDM36I" allowfullscreen></iframe>
+</div>
+<div class="video">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Rg4VkFWBby4" allowfullscreen></iframe>
+</div>
+<footer>
+    <a href="contact_us.html">CONTACT US</a>
+</footer>
+</body>
+</html>
