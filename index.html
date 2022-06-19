@@ -6,28 +6,43 @@
     <title>Crude Coder</title>
     <link rel="shortcut icon" href="Images/One_ring_transparent.png" />
     <link rel="stylesheet" type="text/css" href="index.css">
-    <style> 
+    <style>
+      header {
+        margin-bottom: 50px
+      }
       body {
-        background-image: url("Images/wall1.jpeg");
+        background-image: url("Images/lotr-w8.jpeg");
         background-color: #cccccc;
-	background-size: 100vw 100vh;
+        background-size: 100vw 100vh;
     	background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-position: center;
+          background-size: cover;
       }
-     .screen {
-        position: relative;
+      .playAudioIcon {
+	    width: 55px;
+        text-shadow: black 0px 0px 2px;
       }
-    .innerdiv {
-        position: absolute;
+      .content {
+          padding: 50px;
+          background-color: #c4b479;
+          width: 80%;
+          margin: 0 auto;
+          display:table;
+      }
+      .footer {
+        position: fixed;
         bottom: 0;
-        right: 0;
-    }
-    .playAudioNew {
-	width" 55px;
-    }
-</style>
+        left:0;
+        width: 100%;
+        color: white;
+        text-shadow: black 0px 0px 2px;
+        display: flex;;
+      }
+    </style>
 </head>
 <body>
-<header>
+<header >
 <nav>
     <a href="index.html">HOME</a>
     <a href="thejourney.html">The Journey</a>
@@ -39,10 +54,25 @@
     <a href="aboutme.html">About Me</a>
 </nav>
 </header>
-<div class="title">
+
+<div class="content">
     <h1>The Crude Coder</h1>
-    <button id="playAudio">⏯</button>
-    <input type="image" id="playAudioNew" class="playAudioNew" name="play" src="Images/play-button2 - stop.gif" alt="play">
+
+    zfzxcv
+    zxcvzxcvz
+    xcvzcx
+    vzxc
+    vzxc
+    vz
+    xcvzxcvz <br>
+    xcvzxcvz <br>
+    xcvzxcvz <br>xcvzxcvz <br>
+    xcvzxcvz <br>
+    xcvzxcvz
+    sdfasdfadsfasdf
+    asdfasdfadf <br>
+    asdfasdfsdf
+
 </div>
 
 <audio controls loop id="testAudio" hidden>
@@ -62,45 +92,29 @@
 <!-- div class="date">
     <p id="date"></p>
 </div -->
-<footer id="footer">
-   <div class="screen" id="footer-content"> 
-   <div class="innerdiv">
+<footer id="footer" class="footer">
       <p id="date"></p>
-   </div>
-</div>
+      <input type="image" id="playAudioNew" class="playAudioIcon" name="play" src="Images/play-button2 - stop.gif" alt="play">
 </footer>
 <script>
 
-  // Audio Play
-  document.getElementById("playAudio").addEventListener("click", function(){
-	var audio = document.getElementById('testAudio');
-  if(this.className == 'is-playing'){
-    this.className = "";
-    this.innerHTML = "⏯"
-    audio.pause();
-  }else{
-    this.className = "is-playing";
-    this.innerHTML = "⏯";
-    audio.play();
-  }
-  });
-	
   document.getElementById("playAudioNew").addEventListener("click", function(){
-  var audio = document.getElementById('testAudio');
-  if(this.className == 'is-playing'){
-    var img = document.getElementById("playAudioNew");
-    img.src="Images/play-button2.gif";
-    audio.pause();
-  }else{
-    this.className = "is-playing"'
-    var img = document.getElementById("playAudioNew");
-    img.src="Images/play-button2 - stop.gif";
-    audio.play();
-  }
+      var audio = document.getElementById('testAudio');
+      if(this.className === 'is-playing playAudioIcon'){
+        var img = document.getElementById("playAudioNew");
+        img.src="Images/play-button2 - stop.gif";
+        img.className = "playAudioIcon";
+        audio.pause();
+      } else {
+        this.className = "is-playing playAudioIcon";
+        var img = document.getElementById("playAudioNew");
+        img.src="Images/play-button2.gif";
+        audio.play();
+      }
   });
 
     // Images slideshow
-    var i = 0;
+    /*var i = 0;
     var images = [];
     var time = 2000;
 
@@ -120,7 +134,7 @@
         setTimeout("change_img()", time);
     }
 
-    window.onload = change_img;
+    window.onload = change_img;*/
 
     var d = new Date();
     document.getElementById("date").innerHTML = d;
