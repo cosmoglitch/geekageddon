@@ -13,6 +13,17 @@
 	background-size: 100vw 100vh;
     	background-repeat: no-repeat;
       }
+     .screen {
+        position: relative;
+      }
+    .innerdiv {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    .playAudioNew {
+	width" 55px;
+    }
 </style>
 </head>
 <body>
@@ -31,7 +42,7 @@
 <div class="title">
     <h1>The Crude Coder</h1>
     <button id="playAudio">⏯</button>
-    <input type="image" id="playAudioNew" name="play" src="Images/play-button2 - stop.gif" alt="play">
+    <input type="image" id="playAudioNew" class="playAudioNew" name="play" src="Images/play-button2 - stop.gif" alt="play">
 </div>
 
 <audio controls loop id="testAudio" hidden>
@@ -51,9 +62,12 @@
 <!-- div class="date">
     <p id="date"></p>
 </div -->
-<footer>
-    <p id="date"></p>
-    <!-- a href="contact_us.html">CONTACT US</a -->
+<footer id="footer">
+   <div class="screen" id="footer-content"> 
+   <div class="innerdiv">
+      <p id="date"></p>
+   </div>
+</div>
 </footer>
 <script>
 
