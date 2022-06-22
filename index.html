@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,108 +11,96 @@
       header {
         margin-bottom: 50px
       }
+
       body {
         background-image: url("Images/lotr-w2.jpeg");
         background-color: #cccccc;
         background-size: 100vw 100vh;
-    	background-repeat: no-repeat;
-          background-attachment: fixed;
-          background-position: center;
-          background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
       }
+
       .playAudioIcon {
-	    width: 55px;
+        width: 55px;
         text-shadow: black 0px 0px 2px;
       }
+
       .content {
-          padding: 50px;
-          background-color: #c4b479;
-          width: 80%;
-          margin: 0 auto;
-          display:table;
+        padding: 50px;
+        background-color: #c4b479;
+        width: 80%;
+        margin: 0 auto;
+        display: table;
       }
+
       .footer {
         position: fixed;
         bottom: 0;
-        left:0;
+        left: 0;
         width: 100%;
         color: white;
         text-shadow: black 0px 0px 2px;
-        display: flex;;
+        display: flex;
+      ;
       }
     </style>
 </head>
+
 <body>
-<header >
-<nav>
-    <a href="index.html">HOME</a>
-    <a href="thejourney.html">The Journey</a>
-    <a href="dsa.html">DSA-Basics</a>
-    <a href="competitiveprogramming.html">Competitive Programming</a>
-    <a href="projects.html">Projects</a>
-    <a href="leetcode.html">LeetCode</a>
-    <a href="g4g.html">Geeks4Geeks</a>
-    <a href="aboutme.html">About Me</a>
-</nav>
+<header>
+    <nav> <a href="index.html">HOME</a> <a href="thejourney.html">The Journey</a> <a href="dsa.html">DSA-Basics</a> <a href="competitiveprogramming.html">Competitive Programming</a> <a href="projects.html">Projects</a> <a href="leetcode.html">LeetCode</a> <a href="g4g.html">Geeks4Geeks</a> <a href="aboutme.html">About Me</a> </nav>
 </header>
-
 <div class="content">
-    <h1>The Crude Coder</h1>
-
-    zfzxcv
-    zxcvzxcvz
-    xcvzcx
-    vzxc
-    vzxc
-    vz
-    xcvzxcvz <br>
-    xcvzxcvz <br>
-    xcvzxcvz <br>xcvzxcvz <br>
-    xcvzxcvz <br>
-    xcvzxcvz
-    sdfasdfadsfasdf
-    asdfasdfadf <br>
-
-</div>
-
-<audio controls loop id="testAudio" hidden>
-  <source src="Audio/roadgoes.mp3" type="audio/ogg">
-  <source src="Audio/aragorn.mp3" type="audio/mpeg">
-  <source src="Audio/arwen.mp3" type="audio/mpeg">
-  <source src="Audio/bilbo.mp3" type="audio/mpeg">
-  <source src="Audio/boromir.mp3" type="audio/mpeg">
-  <source src="Audio/denethor.mp3" type="audio/mpeg">
-  <source src="Audio/elrond.mp3" type="audio/mpeg">
-  <source src="Audio/eomer.mp3" type="audio/mpeg">
-</audio>
-
+    <h1>The Crude Coder</h1> zfzxcv zxcvzxcvz xcvzcx vzxc vzxc vz xcvzxcvz
+    <br> xcvzxcvz
+    <br> xcvzxcvz
+    <br>xcvzxcvz
+    <br> xcvzxcvz
+    <br> xcvzxcvz sdfasdfadsfasdf asdfasdfadf
+    <br> </div>
+<div id="audiocontainer"></div>
 <!-- div class="slideshow">
-    <img id="slide" src="Images" alt="slide">
+<img id="slide" src="Images" alt="slide">
 </div -->
 <!-- div class="date">
-    <p id="date"></p>
+<p id="date"></p>
 </div -->
 <footer id="footer" class="footer">
-      <p id="date"></p>
-      <input type="image" id="playAudioNew" class="playAudioIcon" name="play" src="Images/play-button2 - stop.gif" alt="play">
-</footer>
+    <p id="date"></p>
+    <input type="image" id="playAudioNew" class="playAudioIcon" name="play" src="Images/play-button2 - stop.gif" alt="play"> </footer>
 <script>
+    document.getElementById("playAudioNew").addEventListener("click", function() {
+        if(this.className === 'is-playing playAudioIcon') {
+            var img = document.getElementById("playAudioNew");
+            img.src = "Images/play-button2 - stop.gif";
+            img.className = "playAudioIcon";
+            ae.pause();
+        } else {
+            this.className = "is-playing playAudioIcon";
+            var img = document.getElementById("playAudioNew");
+            img.src = "Images/play-button2.gif";
+            ae.play();
+        }
+    });
+    // Play Audio Files
+    var i = 0; // song index
+    var songList = ['Audio/roadgoes.mp3', 'Audio/aragorn.mp3', 'Audio/arwen.mp3', 'Audio/bilbo.mp3', 'Audio/boromir.mp3', 'Audio/denethor.mp3', 'Audio/elrond.mp3', 'Audio/eomer.mp3', ];
+    var audiocontainer = document.getElementById('audiocontainer');
+    var ae = document.createElement('audio');
+    ae.id = 'audioplayer';
+    ae.src = songList[0];
+    audiocontainer.appendChild(ae);
 
-  document.getElementById("playAudioNew").addEventListener("click", function(){
-      var audio = document.getElementById('testAudio');
-      if(this.className === 'is-playing playAudioIcon'){
-        var img = document.getElementById("playAudioNew");
-        img.src="Images/play-button2 - stop.gif";
-        img.className = "playAudioIcon";
-        audio.pause();
-      } else {
-        this.className = "is-playing playAudioIcon";
-        var img = document.getElementById("playAudioNew");
-        img.src="Images/play-button2.gif";
-        audio.play();
-      }
-  });
-
+    function NextSong() {
+        i = (i < songList.length - 1) ? i + 1 : 0; // choose next index
+        ae.setAttribute("src", songList[i]);
+        ae.play();
+    }
+    ae.onended = function() {
+        NextSong();
+    };
     // Images slideshow
     /*var i = 0;
     var images = [];
@@ -134,9 +123,9 @@
     }
 
     window.onload = change_img;*/
-
     var d = new Date();
     document.getElementById("date").innerHTML = d;
 </script>
 </body>
+
 </html>
